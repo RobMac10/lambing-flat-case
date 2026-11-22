@@ -8,6 +8,8 @@
 <meta name="robots" content="noindex, nofollow">
 <link rel="stylesheet" href="assets/style.css">
 
+  <link rel="stylesheet" href="assets/image-fit.css">
+  <link rel="stylesheet" href="assets/place-time.css">
 <style id="imagined-badge-css">
 .imagined-badge{display:flex;flex-wrap:wrap;align-items:center;gap:.3rem .55rem;box-sizing:border-box;max-width:100%;margin:0 0 1rem;padding:.5rem .8rem;border:1.5px dashed rgba(60,50,40,.55);border-radius:12px;background:rgba(255,252,244,.92);color:#3d342b;font-family:inherit;line-height:1.35}
 .imagined-badge .ib-icon{flex:0 0 auto;width:22px;height:22px}
@@ -91,7 +93,21 @@
     <h2>Three witnesses</h2>
     <p>The same three questions for each: What did they say they saw? · Could they really have seen it? · Why might they say it? A period portrait is used where one exists and is free to reuse. Otherwise you will see a plain silhouette, not a likeness. Tap a picture to enlarge it.</p>
     
-    <article class="witness" id="witness-tomme">
+    
+
+    <section class="place-time" data-place-time="lambing-flat" aria-label="Place and time">
+      <h3>Place and time</h3>
+      <p class="pt-lead"></p>
+      <div class="pt-mapcard"></div>
+      <p class="pt-maplbl" aria-live="polite"></p>
+      <div class="pt-ctl">
+        <button type="button" class="pt-play">▶ Play</button>
+        <input type="range" min="0" max="1" value="0">
+      </div>
+      <ol class="pt-tl" aria-label="Timeline of places and dates in this file"></ol>
+    </section>
+
+<article class="witness" id="witness-tomme">
       <figure>
         <button type="button" class="portrait-zoom" aria-label="Enlarge the image: A silhouette, not a likeness. No period portrait of the named petitioners has been located for this file.">
           <img src="assets/portraits/tom-me.png" alt="A silhouette, not a likeness. No period portrait of the named petitioners has been located for this file.">
@@ -300,5 +316,7 @@
 </div>
 
 <script src="assets/app.js"></script>
+<script src="assets/place-time.js"></script>
+
 </body>
 </html>
